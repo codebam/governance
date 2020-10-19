@@ -43,6 +43,15 @@ describe('GovernorAlpha', () => {
     expect(delay).to.be.eq(DELAY)
   })
 
+  it('timelock-bug', async () => {
+    const admin = await timelock.admin()
+    const pendingAdmin = await timelock.pendingAdmin()
+    const delay = await timelock.delay()
+    const encodedAddress = web3.eth.abi.encodeParameter('bytes', timelock.address);
+    const proposal = await sway.propose([timelock.address], [0], ["setPendingAdmin(address)"], [encodedAddress], "dummy proposal")
+    expect(timelock.admin).to.be.eq(governorAlpha.address)
+  })
+
   it('governor', async () => {
     const votingPeriod = await governorAlpha.votingPeriod()
     expect(votingPeriod).to.be.eq(40320)
