@@ -1,6 +1,5 @@
 {
-  "compilerType": "solcjs",
-  "compilerVersion": "./node_modules/solc",
+  "compilerType": "native",
   "outputType": "all",
   "compilerOptions": {
     "outputSelection": {

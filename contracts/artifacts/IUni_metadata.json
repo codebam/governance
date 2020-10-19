@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "dst",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rawAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/Documents/uniswap/governance/contracts/TreasuryVester.sol": "IUni"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/Documents/uniswap/governance/contracts/TreasuryVester.sol": {
+			"keccak256": "0x86c112fc8495793fbb297b6528e353a93db4f3c6d16c7b11e525bf9adf6760d1",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://179bf7868e3e2dbb4e65207bb07bbbe82349737f124104014bd3b516baa8df88",
+				"dweb:/ipfs/QmdpkCBg4umuUodSJBmSRsUd64rmGXTsXA9cLuRApmBLL8"
+			]
+		}
+	},
+	"version": 1
+}
